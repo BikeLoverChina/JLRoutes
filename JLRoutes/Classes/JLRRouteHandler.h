@@ -84,10 +84,10 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param parameters The match parameters passed to use when initializing the object. These are passed from a JLRoutes handler block.
  
- @returns An initialized instance of the conforming class.
+ @returns An initialized instance of the conforming class, or nil.
  */
 
-- (instancetype)initWithRouteParameters:(NSDictionary <NSString *, id> *)parameters;
+- (nullable instancetype)initWithRouteParameters:(NSDictionary <NSString *, id> *)parameters;
 
 
 /**

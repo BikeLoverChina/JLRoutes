@@ -26,8 +26,6 @@ Documentation is available [here](http://cocoadocs.org/docsets/JLRoutes/).
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  // ...
-
   JLRoutes *routes = [JLRoutes globalRoutes];
 
   [routes addRoute:@"/user/view/:userID" handler:^BOOL(NSDictionary *parameters) {
@@ -37,8 +35,6 @@ Documentation is available [here](http://cocoadocs.org/docsets/JLRoutes/).
 
     return YES; // return YES to say we have handled the route
   }];
-
-  // ...
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options
@@ -177,7 +173,7 @@ and then try to route the URL `thing://global`, it would not match because that 
 This tells JLRoutes that if a URL cannot be routed within the `thing` scheme (aka, it starts with `thing:` but no appropriate route can be found), try to recover by looking for a matching route in the global routes scheme as well. After setting that property to `YES`, the URL `thing://global` would be routed to the `/global` handler block.
 
 
-### Wildcard routes ###
+### Wildcards ###
 
 JLRoutes supports setting up routes that will match an arbitrary number of path components at the end of the routed URL. An array containing the additional path components will be added to the parameters dictionary with the key `JLRouteWildcardComponentsKey`.
 

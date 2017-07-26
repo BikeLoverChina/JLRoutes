@@ -1,0 +1,4 @@
+target 'SocialApp' do
+  use_frameworks!
+  pod 'JLRoutes', path: '../../JLRoutes.podspec'
+end

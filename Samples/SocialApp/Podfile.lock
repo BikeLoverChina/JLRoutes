@@ -1,0 +1,16 @@
+PODS:
+  - JLRoutes (2.0.5)
+
+DEPENDENCIES:
+  - JLRoutes (from `../../JLRoutes.podspec`)
+
+EXTERNAL SOURCES:
+  JLRoutes:
+    :path: "../../JLRoutes.podspec"
+
+SPEC CHECKSUMS:
+  JLRoutes: 2a5ee61d739b51a98c9d8112bee5149a19de8854
+
+PODFILE CHECKSUM: 14b5801f1a8aef01ff5d7859314a5d98f13cc18a
+
+COCOAPODS: 1.2.0
